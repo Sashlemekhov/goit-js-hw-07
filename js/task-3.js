@@ -22,4 +22,4 @@ const getGalleryItem = images => images.map(function ({ url, alt }) {
   return `<li class = "gallery-item"><img class = "gallery-image" src = "${url}" alt = "${alt}"></li>`;
 }).join('');
 
-galleryListRef.insertAdjacentHTML('afterbegin', `${getGalleryItem(images)}`);
+galleryListRef.insertAdjacentHTML('afterbegin', getGalleryItem(images));
